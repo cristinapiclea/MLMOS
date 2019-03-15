@@ -26,7 +26,6 @@ sudo systemctl restart sshd
 echo "SSH service restarted" >> /var/log/system-bootstrap.log
 
 # ---------seteaza SELINUX=disbled------------
-# ---------seteaza SELINUX=disbled------------
 cp /etc/selinux/config_new_bkup /etc/selinux/config
 sed -r -i 's/(SELINUX=enforcing)/SELINUX=disabled/' /etc/selinux/config
 echo "SELINUX parameter set" >> /var/log/system-bootstrap.log
