@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #-----------to update all the system software and their dependencies----------
-#yum update
+yum update
 touch /var/log/system-bootstrap.log
 echo "System updated" >> /var/log/system-bootstrap.log
 
